@@ -1,7 +1,15 @@
 package com.company;
 
-public interface Shape {
-    String getName();
-    double getSquare();
-    String getColor();
+public abstract class Shape {
+    private String color;
+
+    public Shape(String c){
+        color=c;
+    }
+
+    public abstract String getName();
+    public abstract double getSquare();
+    public String getColor(){
+        return color;
+    }
 }

@@ -1,12 +1,12 @@
 package com.company;
 
-public class Circle implements Shape{
+public class Circle extends Shape{
     private double radius;
     private String color;
 
-    public Circle(double r, String c){
+    public Circle(double r){
+        super("Red");
         radius=r;
-        color=c;
     }
 
     @Override
@@ -19,8 +19,4 @@ public class Circle implements Shape{
         return 3.14*radius*radius;
     }
 
-    @Override
-    public String getColor() {
-        return color;
-    }
 }

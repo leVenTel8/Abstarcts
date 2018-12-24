@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Shape> shapes = new ArrayList<>();
-        Shape shape = new Circle(1, "Red");
+        Shape shape = new Circle(1);
         shapes.add(shape);
-        shapes.add(new Rectangle(1,1,"Blue"));
+        shapes.add(new Rectangle(1,1));
 
         printShapes(shapes);
 

@@ -1,14 +1,14 @@
 package com.company;
 
-public class Rectangle implements Shape{
+public class Rectangle extends Shape{
     private double height;
     private double width;
     private String color;
 
-    public Rectangle(double h, double w, String c){
+    public Rectangle(double h, double w){
+        super("Blue");
         height=h;
         width=w;
-        color=c;
     }
 
     @Override
@@ -21,8 +21,5 @@ public class Rectangle implements Shape{
         return height*width;
     }
 
-    @Override
-    public String getColor() {
-        return color;
-    }
+
 }
